@@ -1,0 +1,24 @@
+---
+import Counter from "../components/Counter.svelte";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Coconut</title>
+  </head>
+  <body
+    class="mx-auto py-6 text-center min-h-screen flex flex-col justify-between max-w-[65ch]"
+  >
+    <div class="flex flex-row justify-end">
+      <!-- <Info /> -->
+    </div>
+    <Counter client:load request={Astro.request} />
+    <q class="prose italic text-neutral">
+      To increment, or not to increment, that is the question&#8230;
+    </q>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "coconut",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "wrangler pages dev ./dist --do COUNTERS=Counter@coconut-data",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^6.3.0",
+    "@astrojs/svelte": "^2.2.0",
+    "@astrojs/tailwind": "^3.1.3",
+    "astro": "^2.5.5",
+    "svelte": "^3.54.0",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230518.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "daisyui": "^2.51.6",
+    "wrangler": "^3.0.1"
+  }
+}
