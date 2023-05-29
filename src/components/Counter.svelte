@@ -28,7 +28,7 @@
   }
 
   async function join() {
-    let ws = new WebSocket("ws://coconut-data.cloudflare3834.workers.dev/");
+    let ws = new WebSocket("wss://coconut-data.cloudflare3834.workers.dev/");
     ws.addEventListener("open", (event) => {
       currentWebSocket = ws;
     });
