@@ -60,6 +60,7 @@
     on:click={() => {
       currentWebSocket?.send("1");
     }}
+    aria-label="Increment counter"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-plus"
@@ -97,6 +98,7 @@
     on:click={() => {
       currentWebSocket?.send("-1");
     }}
+    aria-label="Decrement counter"
     ><svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-minus"
